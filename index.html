@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CIMS — Consortium Informatique Multi-Sectoriel</title>
+  <meta name="description" content="CIMS — L'informatique au service de tous les secteurs. Plateforme collaborative pour solutions IT multisectorielles." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="assets/Logo.png" alt="CIMS logo" />
+        <!-- <span class="brand">CIMS</span> -->
+      </a>
+      <nav class="nav" id="mainNav">
+        <button class="nav-toggle" id="navToggle" aria-label="ouvrir le menu">☰</button>
+        <ul class="nav-list">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#sectors">Secteurs</a></li>
+          <li><a href="#platform">Plateforme</a></li>
+          <li><a href="#pilot">Pilote</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>CIMS — L'informatique au service de tous les secteurs</h1>
+          <p>Une plateforme collaborative pour co-créer et déployer des solutions numériques adaptées aux 8 grands secteurs socio-économiques.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#sectors">Découvrir les secteurs</a>
+            <a class="btn outline" id="btnJoin" href="#contact">Rejoindre CIMS</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="mock-window">
+            <ul class="stats">
+              <li><strong id="statProjects">0</strong><span>Projets</span></li>
+              <li><strong id="statPartners">0</strong><span>Partenaires</span></li>
+              <li><strong id="statSectors">8</strong><span>Secteurs</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectors" class="sectors">
+      <div class="container">
+        <h2>Les 8 secteurs et opportunités IT</h2>
+        <p class="lead">Solutions, cas d'usage et bénéfices pour chaque secteur.</p>
+
+        <div class="sector-grid" id="sectorGrid"></div>
+      </div>
+    </section>
+
+    <section id="platform" class="platform">
+      <div class="container">
+        <h2>La plateforme CIMS</h2>
+        <p class="lead">Un écosystème cloud, sécurisé et modulaire pour piloter les projets, partager les prototypes et former les équipes.</p>
+        <div class="features">
+          <article>
+            <h3>R&D & Prototypage</h3>
+            <p>Lab pour prototyper IA, IoT et solutions blockchain.</p>
+          </article>
+          <article>
+            <h3>Catalogue de solutions</h3>
+            <p>SaaS sectoriel, API et modules réutilisables.</p>
+          </article>
+          <article>
+            <h3>Centre de formation</h3>
+            <p>Bootcamps, certifications et transferts de compétences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilot" class="pilot">
+      <div class="container">
+        <h2>Projet pilote</h2>
+        <p class="lead">Choisir 1 ou 2 secteurs pilotes pour valider les solutions avant extension.</p>
+        <div class="pilot-cards">
+          <div class="card">
+            <h4>Agriculture</h4>
+            <p>IoT pour suivi des cultures, tableaux de bord météo, ERP pour fermes.</p>
+          </div>
+          <div class="card">
+            <h4>Santé</h4>
+            <p>Dossier médical numérique, télémédecine, IA pour diagnostic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact & Rejoindre</h2>
+        <form id="contactForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="sector">Secteur d'intérêt</label>
+            <select id="sector" name="sector"><option value="">-- Choisir --</option></select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <div class="form-row actions">
+            <button class="btn primary" type="submit">Envoyer</button>
+            <button class="btn outline" type="button" id="resetForm">Réinitialiser</button>
+          </div>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> CIMS — Consortium Informatique Multi-Sectoriel</p>
+      <nav class="footer-nav">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

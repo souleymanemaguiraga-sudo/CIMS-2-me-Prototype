@@ -1,0 +1,27 @@
+/* Styles extracted from project — see canvas full version */
+:root{--bg:#f7f9fc;--card:#ffffff;--text:#0f1724;--muted:#6b7280;--primary:#007BFF;--accent:#28A745;--accent-2:#FF7F50;--radius:12px;--container:1100px;}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui;background:var(--bg);color:var(--text);line-height:1.45}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.logo img{height:84px}
+.nav-list{list-style:none;display:flex;gap:16px}
+.nav-toggle{display:none}
+.site-header{background:#fff;box-shadow:0 6px 20px rgba(15,23,36,0.06);position:sticky;top:0;z-index:40}
+.hero{padding:60px 0}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
+.btn{padding:10px 16px;border-radius:8px;text-decoration:none;border:1px solid transparent;cursor:pointer}
+.btn.primary{background:var(--primary);color:#fff}
+.btn.outline{background:transparent;border-color:#e6eef8}
+.stats{display:flex;gap:18px;list-style:none}
+.sectors,.platform,.pilot,.contact{padding:40px 0}
+.sector-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.card-sector{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.04)}
+.features{display:flex;gap:16px}
+.pilot-cards{display:flex;gap:12px}
+.card{background:var(--card);padding:16px;border-radius:10px;flex:1}
+.form{max-width:700px;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.05)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+@media(max-width:1000px){.hero-inner{grid-template-columns:1fr}.sector-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.nav-list{display:none}.nav-toggle{display:block}.sector-grid{grid-template-columns:1fr}.features,.pilot-cards{flex-direction:column}}
